@@ -2,10 +2,10 @@
 function productHandler(isIncrease) {
     phoneQuant = document.getElementById("phoneQuantity").value;
     phoneQuantNumb = parseInt(phoneQuant);
-    if (isIncrease == true) {
+    if (isIncrease == true ) {
         result = phoneQuantNumb + 1;
     }
-    if (isIncrease == false) {
+    if (isIncrease == false && phoneQuantNumb > 0) {
         result = phoneQuantNumb - 1;
     }
     document.getElementById("phoneQuantity").value = result;
@@ -21,7 +21,7 @@ function caseHandler(isIncrease) {
     if (isIncrease == true) {
         result = caseQuantNumb + 1;        
     }
-    if (isIncrease == false) {
+    if (isIncrease == false && caseQuantNumb > 0) {
         result = caseQuantNumb - 1;
     }
     document.getElementById("caseQuantity").value = result;
